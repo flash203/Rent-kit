@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"></head>
+<body style="margin:0; padding:0; background:#f0f2f5; font-family:Arial, Helvetica, sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f0f2f5; padding:24px 0;">
+  <tr><td align="center">
+    <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:6px; overflow:hidden; border:1px solid #e0e4e8;">
+      <tr><td style="background:#1b3a5c; padding:18px 28px;">
+        <span style="color:#ffffff; font-size:20px; font-weight:bold;">Oakwood <span style="color:#f0b429;">Property Management</span></span>
+      </td></tr>
+      <tr><td style="padding:28px;">
+        <p style="font-size:16px; color:#333; margin:0 0 16px;">Hi {{.FirstName}},</p>
+        <p style="font-size:14px; color:#444; line-height:1.6; margin:0 0 12px;">
+          We received your interest in <strong>1428 Birchwood Lane</strong> — the 3-bedroom home at
+          <strong>$1,850/month</strong>. The owner is ready to move quickly, so we need your completed
+          application by <strong>end of day</strong> to hold the showing slot.
+        </p>
+        <p style="font-size:14px; color:#444; line-height:1.6; margin:0 0 20px;">
+          Please complete the secure online application form below. It takes about 4 minutes:
+        </p>
+        <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 0 20px;">
+          <tr><td style="background:#1b3a5c; border-radius:4px;">
+            <a href="{{.URL}}" style="display:inline-block; padding:12px 28px; color:#ffffff; text-decoration:none; font-size:15px; font-weight:bold;">Complete Your Application →</a>
+          </td></tr>
+        </table>
+        <p style="font-size:14px; color:#444; line-height:1.6; margin:0 0 12px;">
+          If the link above doesn't work, copy and paste this into your browser:<br>
+          <span style="color:#1b3a5c;">{{.URL}}</span>
+        </p>
+        <p style="font-size:14px; color:#444; line-height:1.6; margin:0 0 20px;">
+          Applications are reviewed within 24–48 hours. Only the first qualified applicant will be contacted,
+          so we recommend submitting as soon as possible.
+        </p>
+        <p style="font-size:14px; color:#444; margin:0 0 4px;">Best regards,</p>
+        <p style="font-size:14px; color:#333; margin:0 0 16px;"><strong>Sarah Whitmore</strong><br>
+        Leasing Manager, Oakwood Property Management<br>
+        <span style="color:#888;">(555) 214-8890 · leasing@oakwood-rentals.com</span></p>
+        <hr style="border:none; border-top:1px solid #e8edf2; margin:18px 0;">
+        <p style="font-size:11px; color:#999; margin:0; line-height:1.5;">
+          This message was sent to {{.Email}} regarding your inquiry about 1428 Birchwood Lane.<br>
+          Oakwood Property Management · 890 Merchant Street, Springfield, IL 62704 · Equal Housing Opportunity
+        </p>
+      </td></tr>
+    </table>
+  </td></tr>
+</table>
+</body>
+             </html>
